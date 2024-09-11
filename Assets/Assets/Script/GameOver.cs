@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
+    [SerializeField] private GameObject point;
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("test");
+        PointManager.Instance.UpdatePoint();
+        GameManager.instance.GameOver();
+        point.gameObject.SetActive(false);
     }
 }

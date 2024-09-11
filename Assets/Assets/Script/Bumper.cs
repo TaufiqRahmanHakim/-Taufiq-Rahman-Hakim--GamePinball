@@ -27,6 +27,7 @@ public class Bumper : MonoBehaviour
             GetComponent<MeshRenderer>().material = materialHited;
             animator.SetBool("Play", true);
 
+            PointManager.Instance.addPointByBumper();
             SoundManager.instance.PlaySFX(collision.transform.position);
             VFXManager.instance.PlayVFX(collision.transform.position);
 
