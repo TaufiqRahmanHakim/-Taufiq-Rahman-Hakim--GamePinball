@@ -26,7 +26,10 @@ public class Bumper : MonoBehaviour
         {
             GetComponent<MeshRenderer>().material = materialHited;
             animator.SetBool("Play", true);
+
             SoundManager.instance.PlaySFX(collision.transform.position);
+            VFXManager.instance.PlayVFX(collision.transform.position);
+
             Debug.Log("test");
             // ambil rigidbody nya lalu kali kecepatannya sebanyak multiplier agar bisa memantul lebih cepat
             Rigidbody bolaRig = bola.GetComponent<Rigidbody>();
