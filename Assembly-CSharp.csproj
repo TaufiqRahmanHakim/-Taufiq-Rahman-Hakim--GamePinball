@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F0029059-AA65-6E52-2FED-A847BFFB94F6}</ProjectGuid>
+    <ProjectGuid>{47F26383-94BE-B656-9C9E-238EBC8CEE55}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,6 +67,7 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Assets\Script\CameraController.cs" />
     <Compile Include="Assets\Assets\Script\Pelontar.cs" />
+    <Compile Include="Assets\Assets\Script\SFXController.cs" />
     <Compile Include="Assets\Assets\Script\Manager\SoundManager.cs" />
     <Compile Include="Assets\Assets\Script\Paddle.cs" />
     <Compile Include="Assets\Assets\Script\Bumper.cs" />
